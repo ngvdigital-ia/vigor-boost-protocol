@@ -1,0 +1,90 @@
+:root {
+  color-scheme: dark;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  background: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background: #000;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+}
+
+.age-gate {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100svh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.age-gate__icon {
+  font-size: 140px;
+  line-height: 1;
+  user-select: none;
+}
+
+h1 {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.age-gate__control {
+  display: inline-block;
+  border: 0;
+  border-radius: 14px;
+  padding: 18px 56px;
+  background: #4cdb1e;
+  box-shadow: 0 4px 0 rgb(0 0 0 / 20%);
+  color: #fff;
+  cursor: default;
+  font: inherit;
+  font-size: 42px;
+  font-weight: 700;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .age-gate__icon {
+    font-size: 90px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .age-gate__control {
+    padding: 14px 42px;
+    font-size: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}

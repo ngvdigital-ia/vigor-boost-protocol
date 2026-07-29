@@ -1,0 +1,66 @@
+schema: codex-offer-run.v1
+offer: "Vigor Boost Protocol"
+target_folder: "C:\\Teste_cursor\\vigor-boost-protocol"
+scope_lock:
+  allowed_paths:
+    - "C:\\Teste_cursor\\vigor-boost-protocol"
+  support_files:
+    - "C:\\Teste_cursor\\.claude\\scripts\\qa-clone.py"
+    - "C:\\Teste_cursor\\.codex\\scripts\\evidence-artifact.py"
+  forbidden_without_new_authorization:
+    - "C:\\n8n-projetos"
+    - "C:\\meu-framework"
+briefing:
+  origin: "clickup"
+  task_context_input: "sanitized inline context from task 86ajqpcgc"
+  task_context_input_sha256: "f43e35d668e68ab7e4ab2455b4369b947d69d2c5083b263beb34b9550dc74056"
+  clickup_parent: "86ajqpcde"
+  documento_principal: "Funil"
+  source_url: "https://urban-loom.online/preed3/"
+  domain: "PENDING"
+  route: "/vsl/"
+  page_type: "vsl"
+  vturb_player_id: "PENDING"
+  meta_pixel_id: "PENDING"
+  utmify_pixel_id: "PENDING"
+  checkout_url: "REFERENCE_ONLY_NOT_EXPOSED"
+status: "waiting-video+waiting-tracking"
+decisions:
+  - "Cloned only the single HTTP-captured state: a full-screen age gate."
+  - "Competitor tracking, destination, scripts and operational button behavior were removed."
+  - "The VSL destination was not followed; no player geometry was observable."
+files_touched:
+  - "vsl/index.html"
+  - "vsl/styles.css"
+  - "vsl/OFFER-RUN.yaml"
+gates:
+  issue_ledger:
+    status: NOT_REQUIRED
+    input: ""
+    state: ""
+  domain_lifecycle:
+    status: NOT_REQUIRED
+    input: ""
+  locale_fidelity:
+    status: NOT_REQUIRED
+    input: ""
+  scope: PENDING
+  static: PENDING
+  tracking: WAITING
+  mobile_390x844: PENDING
+  desktop_1440x900: PENDING
+  full_funnel: BLOCKED_BY_REFERENCE_AGE_GATE
+  anonymous_production: NOT_REQUIRED
+  checkout: NOT_EXPOSED
+evidence:
+  - "vsl/evidence/source/reference.html"
+  - "vsl/evidence/source/headers.txt"
+blockers:
+  - "Official VTurb embed was not provided."
+  - "Official tracking IDs were not provided."
+  - "The captured reference exposes only an age gate; the VSL is behind a competitor destination."
+execution_control:
+  budget_minutes: 45
+  alert_minutes: 60
+  same_gate_failures: 0
+  interrupted_worker: false
