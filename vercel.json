@@ -1,3 +1,6 @@
 {
-  "redirects": [{ "source": "/vsl", "destination": "/vsl/", "permanent": true }]
+  "redirects": [
+    { "source": "/", "destination": "/vsl/", "permanent": false },
+    { "source": "/vsl", "destination": "/vsl/", "permanent": true }
+  ]
 }
