@@ -1,12 +1,3 @@
 {
-  "rewrites": [
-    {
-      "source": "/vsl",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/vsl/",
-      "destination": "/index.html"
-    }
-  ]
+  "redirects": [{ "source": "/vsl", "destination": "/vsl/", "permanent": true }]
 }
