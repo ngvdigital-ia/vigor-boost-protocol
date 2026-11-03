@@ -136,7 +136,7 @@ h1{
   border:3px solid var(--ink);
   box-shadow:10px 10px 0 var(--ink);
   overflow:hidden;
-  aspect-ratio:4/4.4;
+  aspect-ratio:1/1;
   background:#2a1a12;
   margin:6px 10px 10px 0;
 }
@@ -260,7 +260,7 @@ footer strong{color:#E6D3C6}
   .hero-grid{grid-template-columns:1.05fr .95fr;column-gap:64px;row-gap:0;align-items:start}
   .hero-a{grid-column:1;grid-row:1;align-self:end}
   .hero-b{grid-column:1;grid-row:2;align-self:start;margin-top:26px}
-  .photo{grid-column:2;grid-row:1 / span 2;aspect-ratio:4/4.8;margin-right:14px;align-self:center}
+  .photo{grid-column:2;grid-row:1 / span 2;aspect-ratio:1/1;margin-right:14px;align-self:center}
   .hero-cta{max-width:560px}
   .btn{font-size:16px;padding:20px 24px}
   .qual{padding:96px 0 104px}
@@ -315,74 +315,14 @@ footer strong{color:#E6D3C6}
       </div>
 
       <figure class="photo">
-        <!-- Fallback illustration (shows until img/hero.jpg exists) -->
-        <svg viewBox="0 0 400 440" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A box of baking soda and a glass of water on a kitchen table">
-          <defs>
-            <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b4a33"/><stop offset="1" stop-color="#3a2519"/></linearGradient>
-            <linearGradient id="table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9824f"/><stop offset="1" stop-color="#7d5130"/></linearGradient>
-            <radialGradient id="win" cx=".25" cy=".1" r=".9"><stop offset="0" stop-color="#ffe7b8" stop-opacity=".85"/><stop offset="1" stop-color="#ffe7b8" stop-opacity="0"/></radialGradient>
-            <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f6ff" stop-opacity=".75"/><stop offset="1" stop-color="#bfe3f7" stop-opacity=".55"/></linearGradient>
-            <linearGradient id="box" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2f6fb5"/><stop offset=".5" stop-color="#3b82cf"/><stop offset="1" stop-color="#2a63a2"/></linearGradient>
-          </defs>
-          <rect width="400" height="440" fill="url(#wall)"/>
-          <rect width="400" height="440" fill="url(#win)"/>
-          <!-- window -->
-          <rect x="250" y="40" width="120" height="150" rx="6" fill="#fbe3b0" opacity=".28"/>
-          <path d="M310 40v150M250 115h120" stroke="#3a2519" stroke-width="5" opacity=".6"/>
-          <!-- table -->
-          <rect y="300" width="400" height="140" fill="url(#table)"/>
-          <rect y="298" width="400" height="6" fill="#d9a470" opacity=".6"/>
-          <!-- soft shadows -->
-          <ellipse cx="140" cy="352" rx="92" ry="14" fill="#000" opacity=".28"/>
-          <ellipse cx="287" cy="356" rx="48" ry="11" fill="#000" opacity=".25"/>
-          <!-- baking soda box -->
-          <g>
-            <path d="M62 190 118 172 118 346 62 352Z" fill="#245a95"/>
-            <rect x="94" y="168" width="104" height="182" rx="4" fill="url(#box)"/>
-            <path d="M94 168 62 190 160 190 198 168Z" fill="#7db4e8"/>
-            <rect x="94" y="236" width="104" height="38" fill="#f4f1e8"/>
-            <rect x="94" y="278" width="104" height="8" fill="#ffb52e"/>
-            <circle cx="146" cy="214" r="15" fill="#f4f1e8" opacity=".95"/>
-            <rect x="108" y="298" width="76" height="6" rx="3" fill="#f4f1e8" opacity=".55"/>
-            <rect x="120" y="312" width="52" height="6" rx="3" fill="#f4f1e8" opacity=".35"/>
-          </g>
-          <!-- glass of water -->
-          <g>
-            <path d="M255 228 263 346Q264 354 272 354H302Q310 354 311 346L319 228Z" fill="url(#water)" stroke="#ffffff" stroke-opacity=".7" stroke-width="2"/>
-            <path d="M257 252H317" stroke="#ffffff" stroke-opacity=".7" stroke-width="2"/>
-            <path d="M268 262 273 340" stroke="#fff" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>
-            <ellipse cx="287" cy="228" rx="32" ry="6" fill="#fff" opacity=".35"/>
-          </g>
-          <!-- spoon with powder -->
-          <g transform="rotate(-18 214 340)">
-            <rect x="190" y="338" width="86" height="6" rx="3" fill="#cfcfcf"/>
-            <ellipse cx="186" cy="341" rx="20" ry="11" fill="#d9d9d9"/>
-            <ellipse cx="186" cy="337" rx="15" ry="6" fill="#fbfbf7"/>
-          </g>
-          <!-- powder pile -->
-          <path d="M196 356q16-18 34 0z" fill="#fbfbf7" opacity=".95"/>
-        </svg>
-        <img src="img/hero.jpg" width="800" height="880" alt="A man in his kitchen with a box of baking soda and a glass of water on the table" fetchpriority="high" decoding="async" onerror="this.remove()">
-
-        <div class="float f1" aria-hidden="true">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg></span>
-          <span><small>The method</small><b>30 seconds</b></span>
-        </div>
-        <div class="float f2" aria-hidden="true">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l-1 6 3 12H6L9 9z"/></svg></span>
-          <span><small>Ingredients</small><b>Baking soda<br>+ water</b></span>
-        </div>
-        <div class="float f3" aria-hidden="true">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
-          <span><small>Know first</small><b>Before you try it</b></span>
-        </div>
+        <img src="img/hero.webp" width="1254" height="1254" alt="A man holding a box of baking soda in a hot tub, with a smiling woman beside him" fetchpriority="high" decoding="async">
       </figure>
 
       <div class="hero-b">
         <p class="lead">If you're over 40 and tired of weak erections, pay attention. This presentation explores the <strong>Horse Soda Trick</strong>, a simple baking soda mixture promoted for male performance. See what the method involves, why people are discussing it, and what you should know before trying it.</p>
 
         <div class="hero-cta">
-          <a class="btn js-cta" id="cta-hero" href="/vsl/">
+          <a class="btn js-cta" id="cta-hero" href="https://vigorboostprotocol.online/vsl-2">
             <span>I want to discover the Horse Soda Trick now</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
@@ -429,7 +369,7 @@ footer strong{color:#E6D3C6}
       </div>
 
       <div class="qual-cta" style="max-width:520px">
-        <a class="btn js-cta" id="cta-qual" href="/vsl/">
+        <a class="btn js-cta" id="cta-qual" href="https://vigorboostprotocol.online/vsl-2">
           <span>I want to see the method today</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -449,7 +389,7 @@ footer strong{color:#E6D3C6}
 
 <!-- Sticky CTA (mobile) – appears once the hero button scrolls out of view -->
 <div class="sticky" id="sticky" aria-hidden="true">
-  <a class="btn js-cta" href="/vsl/" tabindex="-1">
+  <a class="btn js-cta" href="https://vigorboostprotocol.online/vsl-2" tabindex="-1">
     <span>Watch the presentation</span>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
   </a>
@@ -457,10 +397,10 @@ footer strong{color:#E6D3C6}
 
 <script>
 (function(){
-  // 1) Carry every query param (utm_*, fbclid, etc.) and hash to the VSL.
+  // 1) Carry every query param (utm_*, fbclid, etc.) and hash to the VSL page.
   var qs = location.search || "";
   document.querySelectorAll(".js-cta").forEach(function(a){
-    a.setAttribute("href", "/vsl/" + qs + location.hash);
+    a.setAttribute("href", "https://vigorboostprotocol.online/vsl-2" + qs + location.hash);
   });
 
   // 2) Sticky CTA: show only while hero + final CTAs are out of view.
