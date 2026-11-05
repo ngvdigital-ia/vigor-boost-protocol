@@ -29,6 +29,19 @@
           "value": "nosniff"
         }
       ]
+    },
+    {
+      "source": "/vsl/",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'none'; style-src 'unsafe-inline'; img-src 'self' https://*.utmify.com.br; font-src 'self'; connect-src https://*.utmify.com.br https://api.ipify.org https://api6.ipify.org; script-src 'sha256-ZSq5bkUv5pUeUsBfeNDpQN0DGy9sMDnJWHcDH0SSWcs=' https://cdn.utmify.com.br; base-uri 'none'; form-action 'none'"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
     }
   ]
 }
